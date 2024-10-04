@@ -1,11 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>APP1</title>
-</head>
-<body>
-    <h1>Hello this is APP1</h1>
-</body>
-</html>
+{% extends "layout.html" %}
+
+{% block title %}
+App1
+{% endblock  %}
+
+{% block content %}
+App1 Layout Works
+{% endblock  %}
+
+{% comment %} Django first checks if a template/layout.html is present in its app directory {% endcomment %}
+{% comment %} Then is there is not such in app directory then it will go to root directory of project {% endcomment %}
